@@ -1,0 +1,214 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+:root {
+  font-size: 62, 5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #afebba;
+  header {
+    font-weight: bold;
+    padding: 2rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 250px;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        color: #19222a;
+        letter-spacing: 0.1rem;
+        &:hover {
+          transition: all 300ms;
+          color: #f7f7f7;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    box-shadow: 4.6px 9.1px 9.1px hsl(0deg 0% 0% / 0.36);
+    background-color: #19222a;
+    border-radius: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .details {
+      margin: 0 auto;
+      h1 {
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 2rem;
+      }
+      img {
+        display: block;
+        object-fit: cover;
+        border-radius: 2rem;
+        width: 650px;
+        box-shadow: 4.6px 9.1px 9.1px hsl(0deg 0% 0% / 0.36);
+        border: solid 4px #d8efdc;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+      }
+    }
+    .hourdrink {
+      color: white;
+      font-weight: bold;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .producttitle {
+      color: white;
+      font-size: 2.7rem;
+      padding: 3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    .homepage_text {
+      color: white;
+      text-align: center;
+      padding-top: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 4rem;
+      padding: 1rem 2rem;
+      li {
+        .drinks {
+          text-decoration: none;
+        }
+        div {
+          img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 4.6px 9.1px 9.1px hsl(0deg 0% 0% / 0.36);
+            border: solid 4px #d8efdc;
+          }
+        }
+        p {
+          color: white;
+          font-size: 1.1rem;
+          padding-top: 1rem;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    padding: 2rem 5rem;
+    color: #19222a;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+}
+
+.home-pagedrink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  div {
+    img {
+      display: block;
+      object-fit: cover;
+      border-radius: 2rem;
+      width: 650px;
+      box-shadow: 4.6px 9.1px 9.1px hsl(0deg 0% 0% / 0.36);
+      border: solid 4px #d8efdc;
+    }
+  }
+  button {
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 50px;
+    background-color: #d8efdc;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover {
+      transition: all 200ms;
+      background-color: #a6b9a9;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .home-pagedrink {
+    div {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  body {
+    header {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .homepage_text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 570px) {
+  .home-pagedrink {
+    div {
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  body {
+    main {
+      .homepage_text {
+        font-size: 1rem;
+      }
+      .home-pagedrink {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
